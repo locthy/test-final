@@ -1,64 +1,33 @@
 ---
 title: "Worklog Tuần 1"
-date: 2024-01-01
+date: 2026-07-30
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
-reportTableColumns:
-  - Thứ
-  - Công việc
-  - Ngày hoàn thành
-reportType: worklog
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu tuần 1
 
-### Mục tiêu tuần 1:
+* Đăng ký thành công tài khoản AWS Free Tier.
+* Hoàn thành các nhiệm vụ cần thiết để nhận $200 credit miễn phí.
+* Nắm cơ bản về các dịch vụ AWS.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Kế hoạch tuần
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Nhiệm vụ | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | --------- | ------------ | --------------- | ------------------- |
+| 2 | Xem lại video họp giải thích chương trình ngày 30/5/2026 và các nội quy để hiểu rõ yêu cầu và xác định nhiệm vụ trong kỳ thực tập. | 01/06/2026 | 01/06/2026 | [Nội quy - Hướng dẫn](https://hcm-rules.awsfcaj.com/) / [Group description (BKU)](https://app.notion.com/p/Group-description-BKU-36cdf829a73080bea56cfa322fa2e132) |
+| 3 | Tạo tài khoản AWS và làm quen với giao diện AWS Console cùng các dịch vụ hiện có. | 02/04/2026 | 02/06/2026 | [Hành trình đầu tiên lên Mây](https://cloudjourney.awsstudygroup.com/vi/?brid=YWdncwGq9MVKGUkPPwQx_c3Js_WY) |
+| 4 | - Hoàn thành 4 task để kiếm 180$. <br> - Gửi yêu cầu hỗ trợ cho "Task 2: Amazon Bedrock Playground - $20 credit". <br> - Thành lập nhóm và tìm kiếm thành viên cùng quan tâm. | 03/04/2026 | 03/04/2026 | [Chiến lược nhận đủ $200 credit](https://000001.awsstudygroup.com/vi/3-chi%E1%BA%BFn-l%C6%B0%E1%BB%A3c-nh%E1%BA%ADn-%C4%91%E1%BB%A7-200-credit/) |
+| 5 | Tìm hiểu về điện toán đám mây. | 04/06/2026 | 07/06/2026 | [Điện Toán Đám Mây Là Gì ?](https://www.youtube.com/watch?v=HxYZAK1coOI&list=PLahN4TLWtox2a3vElknwzU_urND8hLn1i&index=5) |
+| 6 | Tìm hiểu hệ sinh thái dịch vụ AWS:<br>&nbsp;&nbsp;+ Compute<br>&nbsp;&nbsp;+ Storage<br>&nbsp;&nbsp;+ Networking<br>&nbsp;&nbsp;+ Database | 05/06/2026 | 07/06/2026 | [Dịch vụ đám mây AWS](https://aws.amazon.com/vi/products/) |
 
+### Kết quả tuần 1
 
-### Kết quả đạt được tuần 1:
+* Đã đăng ký tài khoản AWS, hoàn thành 4 task và nhận được 180$.
+* Thành lập nhóm thực tập để hợp tác xuyên suốt kỳ.
+* Nắm được cách một dự án vận hành trên môi trường đám mây.
+* Có cái nhìn cơ bản về các dịch vụ AWS.
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
 
 

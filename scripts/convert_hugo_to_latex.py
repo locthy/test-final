@@ -98,7 +98,11 @@ def sanitize_latex_text(text):
 
 
 def extract_frontmatter(content):
-    match = re.match(r"^---\s*\n(.*?)\n---\s*(?:\n|$)", content, re.DOTALL)
+    if content is None:
+        return {}
+
+    text = str(content).lstrip("\ufeff")
+    match = re.match(r"^---[ \t]*\r?\n(.*?)\r?\n---[ \t]*(?:\r?\n|$)", text, re.DOTALL)
     if not match:
         return {}
 
@@ -119,11 +123,14 @@ def read_frontmatter(path):
 
 
 def strip_frontmatter(content):
-    content = content.strip()
-    match = re.match(r"^---\s*\n.*?\n---\s*(?:\n|$)", content, re.DOTALL)
+    if content is None:
+        return ""
+
+    content = str(content).lstrip("\ufeff")
+    match = re.match(r"^---[ \t]*\r?\n.*?\r?\n---[ \t]*(?:\r?\n|$)", content, re.DOTALL)
     if match:
         return content[match.end():].strip()
-    return content
+    return content.strip()
 
 
 def get_bool_meta(meta, keys, default):
@@ -688,7 +695,7 @@ def convert_to_latex(md_text, source_path=None):
                 [
                     "pandoc",
                     tmp_in,
-                    "-f", "markdown+raw_tex+fenced_divs+bracketed_spans",
+                    "-f", "markdown-yaml_metadata_block+raw_tex+fenced_divs+bracketed_spans",
                     "-t", "latex",
                     "--top-level-division=section",
                     "--lua-filter", LUA_FILTER,
@@ -783,6 +790,8 @@ def process_language(lang):
             md_content = f.read()
 
         processed = preprocess_markdown(md_content, meta=meta)
+
+
         latex = convert_to_latex(processed, source_path=md_path)
 
         out_path = os.path.join(lang_dir, f"{out_name}.tex")
