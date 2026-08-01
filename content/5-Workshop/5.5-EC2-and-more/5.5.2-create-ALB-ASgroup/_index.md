@@ -23,7 +23,7 @@ In this section, we will create an Auto Scaling Group and an Application Load Ba
 
 ![Setting launch template](/images/5-Workshop/5.5-EC2-and-more/5.5.2-create-ALB-ASgroup/lt1.png)
 
-- Select the AMI you previously created.
+- **Select the AMI you previously created.**
   ![Setting launch template](/images/5-Workshop/5.5-EC2-and-more/5.5.2-create-ALB-ASgroup/lt2.png)
 
 | Field                         | Value                        |
@@ -133,7 +133,7 @@ Choose 2 instance created earlier with port **3000** then **Includes as pending 
 | Key              | `Name`        |
 | Value - optional | `Scaling EC2` |
 
-![Setting alb](/images/5-Workshop/5.5-EC2-and-more/5.5.2-create-ALB-ASgroup/asg4.png)
+![Setting alb](/images/5-Workshop/5.5-EC2-and-more/5.5.2-create-ALB-ASgroup/alb1.png){ width=60% }
 
 - **Create Auto Scaling Group**
 

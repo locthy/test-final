@@ -11,7 +11,8 @@ We will create KMS key and attach to S3 Bucket
 ### Create KMS key
 
 1. **KMS Console** -> **Create a key**
-![KMS](/images/5-Workshop/5.7-Security/5.7.1-KMS/kms1.png)
+
+    ![KMS](/images/5-Workshop/5.7-Security/5.7.1-KMS/kms1.png)
 
 2. **Add labels**
 | Field                         | Value                        |
@@ -32,7 +33,8 @@ We will create KMS key and attach to S3 Bucket
 ![KMS](/images/5-Workshop/5.7-Security/5.7.1-KMS/kms4.png)
 
 5. **Create key**
-![KMS](/images/5-Workshop/5.7-Security/5.7.1-KMS/kms5.png)
+
+    ![KMS](/images/5-Workshop/5.7-Security/5.7.1-KMS/kms5.png)
 
 ### Attach to S3 Bucket
 
@@ -41,7 +43,8 @@ We will create KMS key and attach to S3 Bucket
 ![KMS](/images/5-Workshop/5.7-Security/5.7.1-KMS/kms6.png)
 
 2. **Default encryption** -> Edit
-![KMS](/images/5-Workshop/5.7-Security/5.7.1-KMS/kms7.png)
+
+    ![KMS](/images/5-Workshop/5.7-Security/5.7.1-KMS/kms7.png)
 
 3. Default encryption
 | Field                         | Value                        |
