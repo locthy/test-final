@@ -10,12 +10,12 @@ pre: '<b> 5.1. </b>'
 
 The **Perfume Web** project is an e-commerce web application designed for online perfume retail. This workshop guides you through building and deploying a cloud infrastructure for the Perfume Web system on **Amazon Web Services (AWS)**, meeting standards for **High Availability**, **Auto Scaling**, and **Defense-in-Depth security**.
 
----
+
 ## System Architecture
 
 ![Architecture Overview](/images/5-Workshop/5.1-Workshop-overview/architecture.png)
 
----
+
 
 ## Core Components
 
