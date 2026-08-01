@@ -24,8 +24,11 @@ function Div(el)
 end
 
 function Table(el)
-  for _, col in ipairs(el.colspecs) do
-    col.width = pandoc.ColWidthDefault
+  if el.colspecs then
+    for _, col in ipairs(el.colspecs) do
+      col[2] = nil
+    end
   end
+
   return el
 end
